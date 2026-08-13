@@ -9,18 +9,6 @@ Introduce the new Roche Axelios technology and demonstrate its variant-calling p
 - 2025 - SBX technology unveiled
 - June 2026 - launch of AXELIOS 1
 - 
-## Data Sources
-In March 2026, Roche published 30x coverage GIAB VCFs, following their initial presentation in a September 2025 webinar. 
-- **VCFs Data:** [Webinar GIAB XOOS VCFs 30x Duplex](https://web.sbxdata.kamino.platform.navify.com/files/030626-Webinar-GIAB-XOOS-VCFs-30x-Duplex/) *(registration required)*
-- **Webinar:** [SBX Data Analysis Webinar](https://diagnostics.roche.com/global/en/events/sbx-d-data-analysis-webinar.html#video)
-
-## Tools and Configuration
-### Hap.py (Illumina)
-[Hap.py GitHub Repository](https://github.com/Illumina/hap.py)
-- **Truth Data:** NIST v4.2.1 from [NCBI](https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/)
-- **Reference Genome:** hg38 from [UCSC](https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/)
-- **Additional Flags:**
-  - `--engine=vcfeval` for better "local alignment" of variable regions. Groups and restructures variant calls to eliminate false positives.
 
 ---
 
@@ -137,7 +125,21 @@ XOOS utilizes an optimized version of **DeepVariant**:
 
 ---
 
-## Benchmarking Results
+# Benchmarking
+
+## Data Sources
+In March 2026, Roche published 30x coverage GIAB VCFs, following their initial presentation in a September 2025 webinar. 
+- **VCFs Data:** [Webinar GIAB XOOS VCFs 30x Duplex](https://web.sbxdata.kamino.platform.navify.com/files/030626-Webinar-GIAB-XOOS-VCFs-30x-Duplex/) *(registration required)*
+- **Webinar:** [SBX Data Analysis Webinar](https://diagnostics.roche.com/global/en/events/sbx-d-data-analysis-webinar.html#video)
+
+## Tools and Configuration
+### Hap.py (Illumina)
+[Hap.py GitHub Repository](https://github.com/Illumina/hap.py)
+- **Truth Data:** NIST v4.2.1 from [NCBI](https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/)
+- **Reference Genome:** hg38 from [UCSC](https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/)
+- **Additional Flags:**
+  - `--engine=vcfeval` for better "local alignment" of variable regions. Groups and restructures variant calls to eliminate false positives.
+## Results
 ### Inhouse 
 Downsampled 30x
 
