@@ -20,7 +20,7 @@ In March 2026, Roche published 30x coverage GIAB VCFs, following their initial p
 - **Truth Data:** NIST v4.2.1 from [NCBI](https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/)
 - **Reference Genome:** hg38 from [UCSC](https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/)
 - **Additional Flags:**
-  - `--engine=vcfeval`
+  - `--engine=vcfeval` for better "local alignment" of variable regions. Groups and restructures variant calls to eliminate false positives.
 
 ---
 
