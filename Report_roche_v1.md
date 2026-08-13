@@ -4,6 +4,8 @@
 Introduce the new Roche Axelios technology and demonstrate its variant-calling performance using Genome in a Bottle (GIAB) reference data.
 
 ## Timeline
+- 2007 - SBX technology invented at Stratos Genomics, Inc.
+- 2020 - aquisition by Roche
 - 2025 - SBX technology unveiled
 - June 2026 - launch of AXELIOS 1
 - 
